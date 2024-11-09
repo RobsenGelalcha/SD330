@@ -51,12 +51,12 @@ const timerButton = document.querySelector('.button-19.timer');
 const fridgeCam = document.getElementById('fridge-cam');
 let timerInterval;
 
-// Function to create or update the timer UI without removing other buttons
+
 function createTimerUI() {
-    // Check if the timer UI already exists to prevent duplication
+    
     let timerUI = document.getElementById('timer-ui');
     if (!timerUI) {
-        // Create a new div for the timer UI
+        
         timerUI = document.createElement('div');
         timerUI.id = 'timer-ui';
         timerUI.innerHTML = `
@@ -64,15 +64,15 @@ function createTimerUI() {
             <button id="start-timer" class="display-item button-19" style="margin-top: 10px;">Start</button>
             <audio id="timer-sound" src="alarm.wav" preload="auto"></audio>
         `;
-        fridgeCam.appendChild(timerUI); // Append the timer UI without removing other elements
+        fridgeCam.appendChild(timerUI); 
     }
 
     const startButton = document.getElementById('start-timer');
     const timerSound = document.getElementById('timer-sound');
 
     startButton.addEventListener('click', () => {
-        let timeLeft = 60; // 1 minute countdown
-        startButton.disabled = true; // Disable start button while timer is running
+        let timeLeft = 60;
+        startButton.disabled = true; 
 
         timerInterval = setInterval(() => {
             timeLeft--;
@@ -82,14 +82,14 @@ function createTimerUI() {
 
             if (timeLeft <= 0) {
                 clearInterval(timerInterval);
-                timerSound.play(); // Play the sound when the timer finishes
-                startButton.disabled = false; // Re-enable the start button
+                timerSound.play(); 
+                startButton.disabled = false; 
             }
         }, 1000);
     });
 }
 
-// Event listener for Timer button to show the timer UI
+
 timerButton.addEventListener('click', createTimerUI);
 
 
@@ -104,7 +104,7 @@ timerButton.addEventListener('click', createTimerUI);
 const fridgeCamImage = document.getElementById('fridge-cam-image');
 const controllerButtons = document.querySelectorAll('.controller .button-19');
 
-// Event listeners for each button to switch images without removing the other buttons
+
 controllerButtons.forEach(button => {
     button.addEventListener('click', () => {
         if (button.classList.contains('inside')) {
@@ -121,7 +121,7 @@ controllerButtons.forEach(button => {
     });
 });
 
-// Functions to update only the image src and alt text
+
 function showFridgeImage() {
     fridgeCamImage.src = "https://media.istockphoto.com/id/1041825506/photo/opened-fridge-from-the-inside.webp?s=2048x2048&w=is&k=20&c=pCf-vAESsB4fY4DPxg9yugfuO2S3W-zSi1h_OIpHzbA=";
     fridgeCamImage.alt = "Inside Fridge";
@@ -149,7 +149,7 @@ function showMusicImage() {
     playJake();
 }
 
-// Play sound for the Television button
+
 function playSound() {
     const sound = new Audio('movie.wav');
     sound.play();
