@@ -1,0 +1,170 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+}
+#fridge-display {
+  width: 900px;
+  height: 600px;
+  background-color: #333;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto 1fr 1fr;
+  gap: 10px;
+}
+.display-item {
+  background-color: #222;
+  border-radius: 5px;
+  padding: 10px;
+  color: white;
+}
+.time{
+  display: flex;
+  justify-content: space-between;
+}
+.remote{
+  display: flex;
+  
+}
+
+#clock {
+  grid-column: 1 / span 2;
+  font-size: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#power-button {
+  grid-column: 3;
+  background-color: #ff4444;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2em;
+}
+#temperature {
+  grid-row: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#fridge-cam {
+  grid-row: 2 / span 2;
+  grid-column: 2 / span 2;
+ 
+  justify-content: center;
+  align-items: center;
+}
+.controller{
+  display: flex;
+}
+#tv, #browser {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* The styling for this button can be found here: https://getcssscan.com/css-buttons-examples */
+.button-19 {
+appearance: button;
+background-color: #1899D6;
+border: solid transparent;
+border-radius: 16px;
+border-width: 0 0 1px;
+box-sizing: border-box;
+color: #FFFFFF;
+cursor: pointer;
+display: inline-block;
+font-family: din-round,sans-serif;
+font-size: 15px;
+font-weight: 700;
+letter-spacing: .2px;
+line-height: 10px;
+margin: 0;
+outline: none;
+overflow: visible;
+padding: 5px 5px;
+text-align: center;
+text-transform: uppercase;
+touch-action: manipulation;
+transform: translateZ(0);
+transition: filter .2s;
+user-select: none;
+-webkit-user-select: none;
+vertical-align: middle;
+white-space: nowrap;
+width: 50%;
+}
+
+.button-19:after {
+background-clip: padding-box;
+background-color: #1CB0F6;
+border: solid transparent;
+border-radius: 16px;
+border-width: 0 0 4px;
+bottom: -4px;
+content: "";
+left: 0;
+position: absolute;
+right: 0;
+top: 0;
+z-index: -1;
+}
+
+.button-19,
+.button-19:focus {
+user-select: auto;
+}
+
+.button-19:hover:not(:disabled) {
+filter: brightness(1.1);
+-webkit-filter: brightness(1.1);
+}
+
+.button-19:disabled {
+cursor: auto;
+}
+
+.button-19:active {
+border-width: 4px 0 0;
+background: none;
+}
+
+.tempControls{
+  margin-top: 15px;
+  
+}
+.tempControl{
+  margin-right: 12px;
+}
+
+.currentTemp{
+  font-size: 40px;
+}
+
+.controller{
+  margin-top: 15px;
+}
+.list{
+  color: white;
+  font-size: larger;
+
+}
+.adder{
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+

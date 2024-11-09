@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gelalcha Fridge</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div id="fridge-display">
+        <div class="time"><div id="clock" class="display-item">00:00:00</div>
+        
+
+    </div>
+        
+        
+        <div id="power-button" class="display-item">ON/OFF</div>
+        <div id="temperature" class="display-item">
+            <div class="currentTemp">4°C</div>
+            
+            <div class="tempControls">
+                <button class="tempControl up">Up</button>
+                <button class="down tempControl">Down</button>
+                
+            </div>
+            
+        </div>
+        <div class="list">
+            <p>Shopping List</p>
+            <ul class="items">
+                <li>eggs</li>
+                <li>milk</li>
+                <li>cereal</li>
+                <li>cats</li>
+                <li>dogs</li>
+            </ul>
+            <div class="adder">
+                <label for="item"></label>
+                <input type="text" id="item" name="item"><br><br>
+                <button class="add">Add Item</button>
+            </div>
+        </div>
+        
+        <div id="fridge-cam" class="display-item">
+            <img id="fridge-cam-image" src="https://media.istockphoto.com/id/1041825506/photo/opened-fridge-from-the-inside.webp?s=2048x2048&w=is&k=20&c=pCf-vAESsB4fY4DPxg9yugfuO2S3W-zSi1h_OIpHzbA=" height="350px" width="600px" alt="Inside Fridge">
+            <div class="controller">
+
+                <button class="remote display-item button-19 inside"  role="button">Inside</button>
+                <button class="remote display-item button-19 forecast"  role="button">forecast</button>
+                <button class="remote display-item button-19 television"  role="button">Television</button>
+                <button class="remote display-item button-19 browser"  role="button">Browser</button>
+                <button class="remote display-item button-19 music"  role="button">Music</button>
+                <button class="remote display-item button-19 timer"  role="button">Timer</button>
+                
+                
+    
+    
+            </div>
+        </div>
+        
+        
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
