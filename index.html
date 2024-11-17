@@ -1,1 +1,68 @@
-Hello World from Robsen Gelalcha!
+<!-- This is sample code to get the contents of a GitHub repository -->  
+<!doctype  html >
+<html>
+    <head> 
+	
+	</head>	
+
+	<body onload="Filelist()">
+    <div class="head">
+        <span class="welcome"><h2>Welcome to Robsen Gelalcha's File List.</h2></span>
+        
+        <h4>Here, you can find a list of files that will inspire you to become the geatest system designer.</h4>
+
+    </div>
+        
+	<p id="files"> </p>
+            
+
+    <small>&copy; Robsen Gelalcha, November 17, 2024</small></footer>
+        </body>
+	<script>
+	
+		
+		function Filelist(){
+			
+		var htmlString = "";
+		
+		// this creates JS object 'data' with a list of files  
+        // change "aptokash/SD330" to your github id and repository name 
+		(async () => {
+			const response = await fetch("https://api.github.com/repos/robsengelalcha/SD330/contents/");
+			const data = await response.json();
+    	
+		// loop through the list of files, set "file" to each file name
+    		for (let file of data) {
+				fname = file.name;           
+				fpath = "https://robsengelalcha.github.io/SD330/" + fname;  
+				
+				// htmlString += "<p>" +"<a href=${fpath}>"+ fname ;
+				htmlString += "<p>" +"<a href=${fpath}>"+ fpath ;
+			}
+        
+		document.getElementById('files').innerHTML = htmlString;
+		})()
+	
+	}
+</script>
+<style>
+   .head{
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #fca311;
+    margin: 0px;
+    border-style: none;
+    border: 0px;
+      
+}
+    body{
+        margin: 0px;
+        
+        
+        
+    }
+
+</style>
+</html>
+
+
