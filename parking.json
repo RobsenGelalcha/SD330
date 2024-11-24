@@ -1,0 +1,177 @@
+{
+    "parkingLots": {
+        "Midrise": {
+            "name": "Midrise",
+            "map": "enter_fileName",
+            "totalSpaces": 12,
+            "nearestBuilding": "Rotunda",
+            "handicapSpaces": 3,
+            "visitorsAllowed": true
+        },
+        "Foy": {
+            "name": "Foy",
+            "map": "enter_fileName",
+            "totalSpaces": 15,
+            "nearestBuilding": "Hancock",
+            "handicapSpaces": 4,
+            "visitorsAllowed": false
+        },
+        "Fontaine": {
+            "name": "Fontaine",
+            "map": "enter_fileName",
+            "totalSpaces": 15,
+            "nearestBuilding": "Fontaine",
+            "handicapSpaces": 5,
+            "visitorsAllowed": false
+        },
+        "Dyson": {
+            "name": "Dyson",
+            "map": "enter_fileName",
+            "totalSpaces": 20,
+            "nearestBuilding": "Dyson",
+            "handicapSpaces": 8,
+            "visitorsAllowed": false
+        },
+        "RiverView": {
+            "name": "Riverview",
+            "map": "enter_fileName",
+            "totalSpaces": 8,
+            "nearestBuilding": "Rotunda",
+            "handicapSpaces": 2,
+            "visitorsAllowed": false
+        },
+        "Fulton": {
+            "name": "Fulton",
+            "map": "enter_fileName",
+            "totalSpaces": 7,
+            "nearestBuilding": "21 Fulton",
+            "handicapSpaces": 2,
+            "visitorsAllowed": false
+        },
+        "Donnelly": {
+            "name": "Donnelly",
+            "map": "enter_fileName",
+            "totalSpaces": 30,
+            "nearestBuilding": "Donnelly",
+            "handicapSpaces": 5,
+            "visitorsAllowed": true
+        },
+        "SteelPlant": {
+            "name": "Steel Plant",
+            "map": "enter_fileName",
+            "totalSpaces": 15,
+            "nearestBuilding": "Steel Plant",
+            "handicapSpaces": 3,
+            "visitorsAllowed": true
+        },
+        "UpperWest": {
+            "name": "Upper West Cedar",
+            "map": "enter_fileName",
+            "totalSpaces": 12,
+            "nearestBuilding": "Upper West Cedar",
+            "handicapSpaces": 1,
+            "visitorsAllowed": false
+        }
+    },
+    "Midrise": {
+        
+        "1":{
+            "type":"staff",
+            "handicap":true,
+            "availablity":"filled",
+            "reservedDate":"Not Reserved",
+            "angle":"angel"
+
+
+        },
+        "2":{
+            "type":"student",
+            "handicap":true,
+            "availablity":"filled",
+            "reservedDate":"Not Reserved",
+            "angle":"angel"
+
+        },
+        "3":{
+            "type":"guest",
+            "handicap":true,
+            "availablity":"available",
+            "reservedDate":"Monday, November 25, 2024 11:00-11:30AM",
+            "angle":"perpendicular"
+
+        },
+        "4":{
+            "type":"student",
+            "handicap":false,
+            "availablity":"reserved",
+            "reservedDate":"Monday, November 25, 2024 11:00-11:30AM",
+            "angle":"perpendicular"
+
+        },
+        "5":{
+            "type":"staff",
+            "handicap":false,
+            "availablity":"available",
+            "reservedDate":"Monday, November 25, 2024 11:00-11:30AM",
+            "angle":"parallel"
+
+        },
+        "6":{
+            "type":"student",
+            "handicap":false,
+            "availablity":"available",
+            "reservedDate":"Monday, November 25, 2024 11:00-11:30AM",
+            "angle":"angel"
+
+        },
+        "7":{
+            "type":"staff",
+            "handicap":false,
+            "availablity":"available",
+            "reservedDate":"Wednesday, November 27, 2024 10:00-11:30AM",
+            "angle":"parallel"
+
+        },
+        "8":{
+            "type":"guest",
+            "handicap":false,
+            "availablity":"available",
+            "reservedDate":"Tuesday, November 26, 2024 11:00-11:30AM",
+            "angle":"parallel"
+
+        },
+        "9":{
+            "type":"staff",
+            "handicap":false,
+            "availablity":"available",
+            "reservedDate":"Tuesday, November 26, 2024 11:00-11:30AM",
+            "angle":"parallel"
+
+        },
+        "10":{
+            "type":"staff",
+            "handicap":false,
+            "availablity":"available",
+            "reservedDate":"Not Reserved",
+            "angle":"perpendicular"
+
+        },
+        "11":{
+            "type":"student",
+            "handicap":false,
+            "availablity":"available",
+            "reservedDate":"Not Reserved",
+            "angle":"angel"
+
+        },
+        "12":{
+            "type":"staff",
+            "handicap":false,
+            "availablity":"available",
+            "reservedDate":"Not Reserved",
+            "angle":"perpendicular"
+
+        }
+
+    }
+}
